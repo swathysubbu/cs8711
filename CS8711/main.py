@@ -12,8 +12,8 @@ def index():
      weatherApiKey='270d460d5b7d7a048170170ae566ebf7'
      url="https://api.openweathermap.org/data/2.5/weather?q="+cityName+"&appid=" + weatherApiKey
      weatherData = requests.get(url).json()
-        else:
+    else:
             error = 1    
-    return render_template('index.html', data = weatherData, cityName = cityName, error = error)
-if __name__ == "__main__":
+ return render_template('index.html', data = weatherData, cityName = cityName, error = error)
+ if __name__ == "__main__":
     app.run()
