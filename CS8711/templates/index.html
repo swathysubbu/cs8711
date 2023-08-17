@@ -21,7 +21,7 @@ body
       <input type="submit" value="Search"/>
       {% if error is defined and error %}
 					<br><br><span class="alert alert-danger">Error: Please enter valid city name.</span></br>
-				{% endif %}
+      {% endif %}
       {% if data is defined and data %}
 			<table class="table table-bordered">
 				<thead>
@@ -43,7 +43,7 @@ body
 					</tr>
 				</tbody>
 			</table>
-			{% endif %}
+      {% endif %}
     </form>
   </body>
 </html>
